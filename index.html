@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            height: 100vh;
+            display: flex;
+            background: url('./img.jpeg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        #a1,
+        #a2 {
+            width: 50%;
+            /* border: 1px solid red; */
+        }
+
+        h1 {
+            color: orange;
+        }
+
+        h3 {
+            color: orange;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        p {
+            color: orange;
+            /* margin-left:150px; */
+            text-align: right;
+        }
+
+        select,
+        input {
+            width: 250px;
+            height: 30px;
+
+        }
+
+        #a2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        button {
+            background-color: #FF9130;
+            color: white;
+            padding: 10px 60px;
+            border-radius: 20px;
+            border: none;
+            outline: none;
+            width: 150px;
+
+
+        }
+
+        #b1,
+        #b2,
+        #b3 {
+            margin-top: 20px;
+        }
+
+        #b4 {
+            /* border: 1px solid; */
+            width: 257px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div id="a1">
+            <img src="" alt="">
+        </div>
+        <div id="a2">
+            <div>
+                <h1>Login</h1>
+                <div id="b1">
+                    <h3>Select Role</h3>
+                    <!-- <input type="text" placeholder="Select" class="name"> -->
+                    <select name="post" id="">
+                        <option value="">Select</option>
+                        <option value="abc">manager</option>
+                        <option value="abc">Employee</option>
+                    </select>
+
+                </div>
+                <div id="b2">
+                    <h3>User ID</h3>
+                    <input type="text" placeholder="Enter User ID Or Email" class="name">
+                </div>
+                <div id="b3">
+                    <h3>Enter Password</h3>
+                    <input type="text" placeholder="Password" class="name">
+                </div>
+                <div id="b4">
+
+                    <p style="margin-left: 130px;">Forget Password?</p>
+                    <button>Login</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
